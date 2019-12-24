@@ -1,0 +1,3 @@
+[{"usuario":"Juan","nombre":"Juan Pérez","password":"12345","fechaNac":"13/01/1975" },
+{"usuario":"María","nombre":"María García","password":"12345","fechaNac":"14/02/1980" },
+{"usuario":"Pedro","nombre":"Pedro López","password":"12345","fechaNac":"15/03/1985" }]
