@@ -24,7 +24,7 @@ class ConectorBD
   }
 
   function newTable($nombre_tbl, $campos){
-    $sql = 'CREATE TABLE '.$nombre_tbl.' (';
+    $sql = 'CREATE TABLE IF NOT EXISTS '.$nombre_tbl.' (';
     $length_array = count($campos);
     $i = 1;
     foreach ($campos as $key => $value) {
@@ -36,6 +36,7 @@ class ConectorBD
       }
       $i++;
     }
+    // echo ($sql);
     return $this->ejecutarQuery($sql);
   }
 

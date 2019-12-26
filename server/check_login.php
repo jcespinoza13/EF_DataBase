@@ -16,21 +16,25 @@ $con = new ConectorBD($server,$usuario,$pass);
     $resultado_consulta = $con->consultar(['usuarios'],
     ['id','usuario', 'password'], 'WHERE usuario="'.$username.'" and password= sha1("'.$passw.'")');
 
-  if ($resultado_consulta->num_rows != 0) {
-    $fila = $resultado_consulta->fetch_assoc();
-      $response['acceso'] = 'concedido';
-      $response['motivo'] = 'Credenciales correctas';
-      // $acceso = 'concedido';
-      session_start();
-      $_SESSION['appuser']=$username;
-      $_SESSION['appuserid']=$fila['id'];
-      $response['user'] = $_SESSION['appuser'];
-      $response['id'] = $_SESSION['appuserid'];
+  if($resultado_consulta){
+    if ($resultado_consulta->num_rows != 0) {
+      $fila = $resultado_consulta->fetch_assoc();
+        $response['acceso'] = 'concedido';
+        $response['motivo'] = 'Credenciales correctas';
+        // $acceso = 'concedido';
+        session_start();
+        $_SESSION['appuser']=$username;
+        $_SESSION['appuserid']=$fila['id'];
+        $response['user'] = $_SESSION['appuser'];
+        $response['id'] = $_SESSION['appuserid'];
 
-  }else {
-    $response['acceso'] = 'rechazado';
-    $response['motivo'] = 'Credenciales incorrectas';
-    // $acceso = 'rechazado';
+    }else {
+      $response['acceso'] = 'rechazado';
+      $response['motivo'] = 'Credenciales incorrectas';
+      // $acceso = 'rechazado';
+    }
+  } else {
+    $response['acceso'] = 'No existen usuarios, ejecutando script para crearlos';
   }
   // return $acceso;
 }

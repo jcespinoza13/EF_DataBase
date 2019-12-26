@@ -1,0 +1,9 @@
+[{"titulo":"Navidad","fechaInicio":"25/12/2019","fechaFin":"25/12/2019","horaInicio":"00:00","horaFin":"00:00","completo":"1","fk_usuario":"1" },
+{"titulo":"Noche Buena","fechaInicio":"24/12/2019","fechaFin":"25/12/2019","horaInicio":"22:00","horaFin":"01:30","completo":"0","fk_usuario":"1" },
+{"titulo":"Año Nuevo","fechaInicio":"31/12/2019","fechaFin":"01/01/2020","horaInicio":"18:00","horaFin":"05:30","completo":"0","fk_usuario":"1" },
+{"titulo":"Navidad","fechaInicio":"25/12/2019","fechaFin":"25/12/2019","horaInicio":"00:00","horaFin":"00:00","completo":"1","fk_usuario":"2" },
+{"titulo":"Noche Buena","fechaInicio":"24/12/2019","fechaFin":"25/12/2019","horaInicio":"22:00","horaFin":"01:30","completo":"0","fk_usuario":"2" },
+{"titulo":"Año Nuevo","fechaInicio":"31/12/2019","fechaFin":"01/01/2020","horaInicio":"18:00","horaFin":"05:30","completo":"0","fk_usuario":"2" },
+{"titulo":"Navidad","fechaInicio":"25/12/2019","fechaFin":"25/12/2019","horaInicio":"00:00","horaFin":"00:00","completo":"1","fk_usuario":"3" },
+{"titulo":"Noche Buena","fechaInicio":"24/12/2019","fechaFin":"25/12/2019","horaInicio":"22:00","horaFin":"01:30","completo":"0","fk_usuario":"3" },
+{"titulo":"Año Nuevo","fechaInicio":"31/12/2019","fechaFin":"01/01/2020","horaInicio":"18:00","horaFin":"05:30","completo":"0","fk_usuario":"3" }]

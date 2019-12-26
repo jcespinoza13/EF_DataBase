@@ -24,7 +24,7 @@ if (isset($_SESSION['appuser'])) {
     } else{
       $data['fechafin'] = "'".$_POST['start_date']."'";
     }
-    $data['horafin'] = "'23:30'";
+    $data['horafin'] = "'00:00'";
   } else {
     $data['horainicio'] = "'".$_POST['start_hour']."'";
     $data['fechafin'] = "'".$_POST['end_date']."'";
