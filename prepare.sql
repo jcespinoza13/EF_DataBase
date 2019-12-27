@@ -1,3 +1,3 @@
 
-CREATE USER IF NOT EXISTS 'nextUser'@'localhost' IDENTIFIED WITH mysql_native_password BY 'NextUser#';
-GRANT ALL PRIVILEGES ON * . * TO 'nextUser'@'localhost';
+CREATE USER IF NOT EXISTS 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '';
+GRANT ALL PRIVILEGES ON * . * TO 'root'@'localhost';

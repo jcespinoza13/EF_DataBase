@@ -116,7 +116,12 @@ class ConectorBD
 
   function consultar($tablas, $campos, $condicion = ""){
     $sql = "SELECT ";
-    // $ultima_key = end(array_keys($campos));
+    // if(phpversion == '7.3.10'){
+    //     $ultima_key = array_key_last(array_keys($campos));
+    // } else {
+    //     $ultima_key = end(array_keys($campos));
+    // }
+    // // $ultima_key = end(array_keys($campos));
     $ultima_key = array_key_last(array_keys($campos));
     foreach ($campos as $key => $value) {
       $sql .= $value;
@@ -125,6 +130,11 @@ class ConectorBD
       }else $sql .=" FROM ";
     }
 
+    // if(phpversion == '7.3.10'){
+    //     $ultima_key = array_key_last(array_keys($tablas));
+    // } else {
+    //     $ultima_key = end(array_keys($tablas));
+    // }
     // $ultima_key = end(array_keys($tablas));
     $ultima_key = array_key_last(array_keys($tablas));
     foreach ($tablas as $key => $value) {
